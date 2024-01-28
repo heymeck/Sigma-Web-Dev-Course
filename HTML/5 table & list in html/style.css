@@ -1,0 +1,22 @@
+/* h1{
+    color: pink;
+} */
+
+th{
+    font-style:oblique;
+    border: 4px solid black;;
+}
+
+td{
+    color:rgb(132, 71, 14);
+    border:2px solid black;
+}
+caption{
+    background-color: green;
+}
+ul{
+    color:blue;
+}
+ol{
+    color: green;
+}

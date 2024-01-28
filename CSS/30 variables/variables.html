@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <style>
+        :root {
+            /* :root is used to declare global variable in css as they are declared in root they are globla variable*/
+            
+            --color: yellow;    /* to declare variable we use --(name of variable) */
+            
+            --backgroundcolor: rgb(192, 192, 129);
+            --defpad:10px;
+            --defmarg:10px;
+        }
+
+        * {
+            margin: var(--defmarg);
+            padding: 0;
+        }
+
+        .nav {
+            
+            --baccolor:rgb(229, 20, 20);
+            margin: 0px;
+            /* background-color: pink; */
+            background-color: var(--backgroundcolor); /* to call variable we do this*/
+
+        }
+        ul li:first-child{
+            --backcolor:rgb(226, 111, 111);
+            background-color:var(--backcolor);
+           
+        }
+
+        ul {
+            display: flex;
+            /* flex-direction: row; */
+            list-style-type: none;
+            border: 2px solid black;
+        }
+
+        ul li {
+            margin: 0px;
+            display: flex;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 2px solid black;
+            width: 100vw;
+            justify-content: center
+        }
+
+        .container {
+            --baccolor:rgb(229, 20, 20);
+            background-color: rgb(136, 136, 186);
+            margin: 10px;
+        }
+        .container span{
+            background-color: var(--baccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Search</li>
+            <li>Explore</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptatibus iure accusamus, excepturi
+            dicta itaque aliquam quisquam quis sequi est libero, dolorum saepe laboriosam porro vel? Laborum, saepe.
+            Dolorum aut quas dignissimos, est commodi facilis eius a ipsam quibusdam voluptatibus eligendi expedita modi
+            eveniet dicta?</p>
+            <span>Hello this is a new line</span>
+    </div>
+
+</body>
+
+</html>

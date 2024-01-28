@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        /* media queries in css is used to set responsive layout according to the media device
+           like what if the site is opened on phone,tablet monitor or tv */
+
+           /* syntax of media query is :- @media only/not screen and (expression){css code} */
+
+         
+          
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightblue;
+            color: blue;
+        }
+        .box{
+            display:flex;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 200px;
+            border: 2px solid green;
+            margin: 3px;
+            padding: 3px;
+            background-color: rgb(199, 199, 111);
+        }
+        @media only screen and (max-width:600px) {
+            body{
+                background-color: pink;
+            }
+          }
+          .boxes{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: stretch;
+          }
+          @media only screen and (max-width:600px) {
+            .boxes{
+                flex-direction: column;
+                
+            }
+            @media not screen and (orientation:landscape){
+                
+                .box{
+                    border:5px dotted rgb(224, 37, 37);
+                }
+            }
+            
+            
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Hello this is a container.
+    </div>
+    <div class="boxes">
+        <div class="box">Hello</div>
+        <div class="box">this</div>
+        <div class="box">box</div>
+        
+    </div>
+
+    
+</body>
+</html>

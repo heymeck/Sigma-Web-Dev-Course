@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts Text and color in CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!-- we can either import font form website url as shown in line 15 or we can link its url using link tag or import keyword  -->
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet"> -->
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');      */
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins&display=swap');
+        h1{
+            font-family: 'poppins','Baloo Bhai 2';
+        }
+       .first{
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family:'Baloo Bhai 2',sans-serif;
+            /* font-weight: 1000;  
+            text-decoration:underline; */
+            line-height: 2;         /*used to give space between line*/
+            letter-spacing: 2px;      /*used to give space between letters*/
+            background-color: aqua;
+            margin: 2px;
+            padding: 10px;
+            font-size: 30px;    
+        }
+        h2{
+            text-transform:capitalize;
+            text-decoration-line: underline; /* to underline the text on webpage*/
+            text-decoration-color: rgb(0, 255, 4);    /* decorate the undeline of the text by desired color*/
+            text-decoration-style: wavy;    /* to style the underline of the text as dotted or dashed and many more*/
+            text-decoration-thickness: 5px; /* to give thicknes to the text decoration style*/
+            text-indent: 56px;              /* to give an indent to the text */
+            text-align:center;              /* to align text to your desired position*/
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 50px;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p class="first">This is code on Fonts. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, accusantium dolor porro nisi molestiae maiores iste cumque aperiam enim doloribus?</p> 
+    </div>
+    <p class="lorem"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore provident ut molestiae quis impedit natus, totam ipsa quaerat, harum laborum et consequuntur. Reiciendis?
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow of box</title>
+    <style>
+        .box{
+        border:2px solid black;
+        width: 20vw;
+        height: 20vh;
+        /* overflow: auto; is used to give an automatic scrollbar to the box */
+        /* white-space:nowrap; */
+        overflow:auto;
+        /* white-space:nowrap; */
+        /* overflow-x: hidden;   m/*to handle mannualy the overflow of x axis same follow as in y*/
+        /* overflow-y:auto; */ 
+        overflow: hidden auto;  /* over flow short hand is used to give instruction to x and y axis together
+                                    the first is for x axis and second is for y axis*/
+        /* text-overflow: ellipsis; */
+        
+
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello this is to check the overflow properties of the css and we are gonna experiment on this box by giving it low height and
+        width and applying the css overflow properties to handle the overflow of the text.
+
+        overflow; auto; is used to give an automatic scroll bar to the box if the the text is overflowing from the box 
+        white-space:nowrap; is used to give no wrap to the text written in the box.
+        text-overflow:ellipsis; is used to give 3 dots at the end of the box ending. if the text is greater than the box.
+
+
+        
+    </div>
+    
+</body>
+</html>

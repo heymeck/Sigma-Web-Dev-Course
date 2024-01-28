@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows and outlines</title>
+    <style>
+        *{
+
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            outline: 4px solid pink;
+            outline-offset: 4px;
+            border-radius: 30px;
+            margin: 10px;
+            padding: 30px;
+            box-shadow: inset -8px -5px 10px 4px blue ; /* the syntax to give shadow is "inset/outset x(value) y(value) blur(value)
+                                                             spread(value) shadow color" example : inset 5px 5px 10px 6px blue*/
+            text-shadow: 16px 5px 6px grey;
+            text-decoration:dashed;
+            text-decoration-line: underline;
+        }
+        .text-element{
+            color: red;
+            margin-left: 10px;
+            text-shadow:  -9px 4px 5px rgb(196, 91, 91);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello this is testing of shadows in css.
+    </div>
+    <p class="text-element"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, labore?</p>
+    
+</body>
+</html>

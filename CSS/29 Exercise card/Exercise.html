@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design the card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+        }
+        .box {
+            margin: 20px;
+            height: 510px;
+            width: 450px;
+            border: 1px solid black;
+            position: relative;
+            left: 400px;
+            /* border-radius: 20px; */
+            background-color: #f1eaea;
+            z-index: 1;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            border: 1px solid black;
+            position: absolute;
+            margin: 20px 35px 20px 35px;
+            border-radius: 10px;
+            /* margin-top: 15px; */
+            background-color: #fff;
+
+            height: 470px;
+            position: absolute;
+            top: auto;
+            bottom: auto;
+            width: 380px;
+            z-index: 2;
+        }
+
+        .image {
+            box-sizing: border-box;
+            height: 30px;
+            width: 355px;
+            position: absolute;
+            margin: 5px 5px 219px 5px;
+            height: 220px;
+            border-radius: 10px;
+            z-index: 3;
+            left: 1px;
+
+        }
+
+        div span {
+            display: inline-flex;
+            flex-direction: row;
+            position: relative;
+            top: 240px;
+            height: 7px;
+            width: 40px;
+            padding: 10px;
+            align-items: center;
+            border: 1px solid;
+            border-radius: 18px;
+            left: 24px;
+            justify-content: space-evenly;
+        }
+
+        .Heading {
+            display: flex;
+            position: absolute;
+            bottom: 160px;
+            left: 24px;
+        }
+
+        div p {
+            display: flex;
+            position: absolute;
+            bottom: 67px;
+            box-sizing: border-box;
+            height: 90px;
+            width: 350px;
+            left: 24px;
+            text-overflow: ellipsis;
+            /* text-align:start; */
+            
+        }
+        .button{
+            box-sizing: border-box;
+            display: flex;
+            position: absolute;
+            bottom: 7px;
+            left: 140px;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 30px;
+            align-items: center;
+            font-size:16px;
+            justify-items: center;
+            color: rgb(77, 101, 222);
+            background-color: rgb(180, 221, 237);
+            text-decoration-thickness: 5px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="box2">
+            <div class="image">
+                <img src="image.png" class="image">
+            </div>
+            <div><span>
+                    Ticket
+                </span>
+                <span>
+                    Tourist
+                </span>
+            </div>
+            <div class="Heading">
+                <h1>Train safar</h1>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi necessitatibus reiciendis mollitia ab
+                    illo cumque rem maiores! Minus, quos? Repudiandae sed dolorum assumenda veniam, natus optio deleniti
+                    ullam recusandae, aliquid pariatur blanditiis culpa libero.
+                </p>
+            </div>
+            <div>
+                <button class="button"> Read more..</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

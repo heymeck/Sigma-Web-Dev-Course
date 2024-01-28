@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercise 2 of css</title>
+    <style>
+        /* first approach can be this */
+         /* div>:first-child{
+            background-color: yellow;
+            color: red;
+        } */
+         /* div>p{
+            background-color: blue;
+            color: white;
+        }  */
+          p:first-child{ /* first child is use to give condition that css will only apply if it is the first child of any element*/
+        background-color: yellow;
+        color: red;}
+
+        p{
+            background-color: blue;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>2nd Exercise of the css </h1>
+    <h2>Problem:- You have to make 5 div and inside div can make 2-3 paragraphs and you have to do styling so the first paragraph of div has bg color yellow and font color red and other paragraph has bg color blue and text color white. note you cannot use class in html and inline css in html tags</h2>
+    <div>
+        <p> I am the main paragraph of the exercise</p>
+        <p>I am paragraph no 2</p>
+        <p>I am paragraph no 3</p>
+        <p>I am paragraph no 4</p>
+    </div>
+    <div>
+        <p> I am the main paragraph of the exercise and my div is 2</p>
+        <p>I am 2nd paragraph  of div no 2</p>
+        <p>I am 3rd paragraph of div no 2</p>
+        <p>I am 4th paragraph of div no 2</p>
+    </div>
+    <div>
+        <p> I am the main paragraph of the exercise and my div is 3</p>
+        <p>I am 2nd paragraph  of div no 3</p>
+        <p>I am 3rd paragraph of div no 3</p>
+        <p>I am 4th paragraph of div no 3</p>
+    </div>
+    <div>
+        <p> I am the main paragraph of the exercise and my div is 4</p>
+        <p>I am 2nd paragraph  of div no 4</p>
+        <p>I am 3rd paragraph of div no 4</p>
+        <p>I am 4th paragraph of div no 4</p>
+    </div>
+    <div>
+        <p> I am the main paragraph of the exercise and my div is 5</p>
+        <p>I am 2nd paragraph  of div no 5</p>
+        <p>I am 3rd paragraph of div no 5</p>
+        <p>I am 4th paragraph of div no 5</p>
+    </div>   
+</body>
+</html>

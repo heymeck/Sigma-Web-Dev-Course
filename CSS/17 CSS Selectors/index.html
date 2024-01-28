@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- In this we are gonna use internal css -->
+    <style>
+        /* first we gonna take on element selector
+            Element selector selects the whole elemets of same name in html 
+            */
+            div{    /* this will select all div in html*/
+                color:red;
+                background-color: grey;
+            }
+        /* class selector       synatx is :- .classname{}
+            Through this selector we target a paricular class of elements*/
+            .class{     /* it is applicable on the elements of the same class name*/
+                background-color: skyblue;
+                color: darkgreen;
+            }
+        /*  Id selector         syntax is :- #ID{}
+            through this selector we target an element of html with a definite id. we cannot give same id to multiple elements*/
+            #Id{
+                background-color: aquamarine;
+                color: rgb(201, 40, 7);
+                font-style: italic;
+            }
+        /* child selector       syntax is :- element>element{}
+                child selector are used to select those elements who lives inside another element like a paragrah live in a div */
+            div>p{
+                color: blueviolet;
+            }
+            /* we can only use child selector if the element is direct child of an element. For example we cannot select any element if he lies inside main of span of div example in line no */
+        
+        /* descendant selector      syntax is :- element_space_element{}
+            to select element who lies inside of para which lies inside span which lies inside div we use descendat selector */
+            article p{
+                color: magenta;
+            }
+        /* universal selector       syntax is :- *{}
+            It is used to select the whole elements of webpage to give them equal properties like giving videos equal height and width and margin*/
+            *{
+                margin:.5%;
+                padding: 0%;
+            }
+        /* psuedo selector */
+        a:visited{
+            color:red;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: violet;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        span:first-child{
+            background-color: pink;
+        }
+
+            
+    </style>
+</head>
+<body>
+    <div>I am div example of element selector</div>
+    <p class="class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique impedit quis fuga voluptate excepturi rerum dolorum, accusamus minus laudantium.
+    </p>
+    <div>this is another div example of element selector</div>
+    <div class="class">Example for class selector</div>
+    <br>
+<!-- Example of id selector -->
+    <div id="Id" >example of id</div>
+    <!-- Example of Child selector  -->
+    <div>Example of child Selector
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, in!</p>
+    </div>
+<!-- Example of descendant selector -->
+    <article>
+        Example of descendant selector
+        <br>
+        <span style="font-style:italic;">Example of descendant selector
+            <p>this is an example of descendant selector it will get selected doesnt matter where it is in article</p>
+        </span>
+    </article>
+<!-- Example of universal selector -->
+<!-- The synatx of universal selector is *{} -->
+
+<!-- Example of pseudo selector -->
+    <a href="https://www.hackerrank.com"> Open hackerrank</a>
+    <a href="https://www.leetcode.com"> Open leetcode</a>
+    <a href="https://www.google.com"> Open Google</a>
+    <main>
+        <span>I am the first span Test of psuedo selector</span>
+        <span>I am the Second span Test of psuedo selector</span>
+    </main>
+
+    
+</body>
+</html>

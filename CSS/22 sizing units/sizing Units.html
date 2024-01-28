@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- types of sizing units in html
+        1. px stands for pixels
+        2. vw and vh :- stand for viewport width and height used to set responsive ui with device resolution
+        3. em and rem:- stands for element and root element use to give time of element and root element
+        4. vmin and vmax:- depends on the complex scenerios of reprsenting website in phone and monitor. so vin triggers width in
+                           phone and height in monitor as the have less pixels as name suggest minimum and vmax trigger height in phone
+                           and width in monitors. 
+
+    -->
+     
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>sizing units</title>
+         <style>
+             * {
+                 margin: 0;
+                 padding: 0;
+             }
+     
+             html {
+                 font-size: 10px;
+             }
+     
+             .container {
+                 box-sizing: border-box;
+                 width: 90vw;
+                 /* height: 10vh; */
+                 border: 4px solid black;
+                 background-color: yellow;
+                 margin: 12px auto;
+                 font-size: 18px;
+             }
+     
+             .container>p {
+                 font-size: 2em;
+                 /* em inherits the value of size from parent and can be multiplied using em unit*/
+             }
+     
+             .mycon {
+                 box-sizing: border-box;
+                 width: 90vw;
+                 height: 70vh;
+                 border: 4px solid black;
+                 background-color: yellow;
+                 margin: 12px auto;
+                 font-size: 18px;
+             }
+     
+             .box>p {
+                 font-size: 3rem;
+                 width: 90vw;
+                 box-sizing: border-box;
+                 border: 3px solid blue;
+                 background-color: grey;
+                 margin: 12px auto;
+     
+             }
+         </style>
+     </head>
+     
+     <body>
+         <div class="container">
+             <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, debitis.
+             </p>
+         </div>
+     
+         <div class="mycon">
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos recusandae dolorem alias non
+                 reiciendis! Quidem, incidunt reprehenderit aperiam voluptate, nihil explicabo beatae similique alias minima
+                 voluptas sapiente assumenda quod praesentium totam corrupti eius ipsa animi vero esse? Eligendi nemo tenetur
+                 maxime perferendis, commodi ex ea, fuga deserunt numquam repellat eveniet praesentium sunt necessitatibus
+                 voluptatibus.</p>
+         </div>
+     
+         <div class="box">
+             <p>this is the footer of the website Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores magnam
+                 cum in molestias, at error, doloribus inventore, voluptates sequi aut reprehenderit ipsa qui eos labore!
+                 Cupiditate voluptatem totam molestiae repellat nostrum eaque sed soluta, aliquam natus vel repudiandae
+                 officia fuga illum atque ad, sit eveniet consequatur voluptatibus quae animi! Fugiat tenetur saepe magni id.
+             </p>
+         </div>
+     
+     </body>
+     
+     </html>

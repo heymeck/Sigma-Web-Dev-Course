@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and cascading in css</title>
+
+    <!-- Rule of specificity in css -->
+    <!--    position and order of appearence it checks the position of styling applied in case of same selector  -->
+    <!--    specificity calculation :- it check which selector is more specific to the element   -->
+    <!--        inline css> id selector > class or attribute selector > element selector > universal selector -->
+    <!--    origin:- it checks the origin of css style if it is coming from browser or you have code it mannualy
+                     browser does have some user agent stylin for tags that you have not styled in your code -->
+    <!--    importance:- if you have marked an syling important it will not see the other rule and do important marked
+                         stylin apply in css. syntax "color: blue !important" -->
+
+    <style>
+        h2{                  /* it is element selector*/
+            background-color: aqua;
+        }
+
+        .red{
+            background-color: red;
+        }
+        .blue{                           /* if the selector is same like in these cases it will check the last written style*/
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        [data-x=a]{
+            background-color:aqua;
+        }
+        /* #id{
+            background-color: violet;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- Css use cascading algorith to solve the confilict between the selector in css -->
+    <h2 class="red green blue" id="id" data-x="a">let see who will trigger this to style </h2> <!-- it has 3 class to get trigger and one attribute-->
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Display properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            display:inline-flex;
+            /* display: none; */
+            /* visibility: hidden;*/   /* is used to hide the box */
+            /* display inline property make a block element an inline element it prevents adding margin and padding from above
+            inline-block property make a block element in inline block element on which we can give height and width*/
+            /* visibility: hidden; */
+            border: 3px solid blue;
+            width: 344px;
+            margin: 45px;
+            padding: 20px;
+            text-decoration:wavy;
+            text-decoration-color: blue;
+            text-decoration-thickness: 4px;
+            text-decoration-line: underline;
+            color: green;
+            /* text-align: center; */
+            align-content: center;
+            justify-content: center;
+        }
+
+        .box1 {
+            /* display:none; */
+            visibility: hidden;
+        }
+
+        .line {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            width: 90vw;
+            height: 40px;
+            border: 3px solid red;
+            margin: 30px;
+        }
+
+        .line2 {
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="box box1">
+        I am another box <!-- -->
+    </div>
+    <span class="line">I am an inline element</span>
+    <span class="line2 line">I am another inline element</span>
+</body>
+
+</html>
