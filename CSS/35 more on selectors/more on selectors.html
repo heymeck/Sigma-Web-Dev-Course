@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css selectors</title>
+    <style>
+        .boxes *{
+            color:aqua;
+            border: 2px solid black;
+        }
+        /* .box:first-child{
+            color: green;
+        } */
+        /* .box::first-line{
+            background-color: skyblue;
+        } */
+
+        .box:nth-child(even){
+            background-color: red;
+        }
+      p,a,.box,[data-bgc="yellow"]{     /* to select through attribute we use [data-name=""] value and to apply on multiple elements we
+                                            just use element before the attribute and put a comma after it*/
+            background-color: coral;
+            color: yellow;
+        }
+        .boxes::before{
+            content: "Use of before psuedo selector in css";
+            color:purple;
+            border: 2px solid violet;
+        }
+        .boxes::after{
+            content: "use of after psuedo selector and adding element in html through css";
+        }
+
+       .boxes ::selection{ /*we can also use selection like this ::selection diffrence will be it will 
+                                apply for whole page then only .boxes class*/
+            color:lightgreen;
+            background-color: black;
+        }
+        input::placeholder{
+            color: rgb(38, 47, 177);
+
+            padding: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box"> Hello I am first box.</div>
+        <div data-bgc="yellow" class="box">Hello I am Second box.</div>
+        <p>hello i am a para</p>
+        <div class="box">Hello I am third box.</div>
+        <label for="user">user</label>
+        <input type="text" placeholder="enter your name" name="user">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 200px;
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* flex-direction:column; */
+            /* flex-flow: row-reverse; */
+            /* flex-wrap:wrap; */
+            /* align-content: center; */
+            gap:30px 30px;
+        }
+
+        .box{
+            text-align: center;
+            height: 40px;
+            width: 40px;
+            background-color: green;
+            margin:2px;
+            border: 1px solid blue;
+            flex-grow: 1;
+
+        }
+        .order-1{
+            order: 1;
+            flex-grow: 2;
+            align-self: flex-end;
+            
+        }
+        .order-2{
+            order: 2;
+            flex-shrink: 2;
+            background-color: aqua;
+        }
+        .order-3{
+            order: 3;
+        }
+        .order-4{
+            order: 4;
+        }
+        .order-5{
+            order: 5;
+        }
+    </style>
+</head>
+<body>
+ <main>
+    <div class="container">
+        <div class="box order-1">1</div>
+        <div class="box order-2">2</div>
+        <div class="box order-3">3</div>
+        <div class="box order-4">4</div>
+        <div class="box order-5">5</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+       
+        
+    </div>
+</main>
+    
+</body>
+</html>

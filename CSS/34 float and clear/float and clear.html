@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .cards{
+            margin: 2px;
+            border: 2px solid red;
+            display: flow-root; /* this property allow the parent div to set its border according to the biggest item in the box in 
+                                        this case image is the biggest iten */
+        }
+        .card{
+            border: 2px solid black;
+            margin: 2px;
+            /* text-align:left; */
+        }
+        
+        img{
+            float:left; /* float property allows the space to the item to float in desired place as in this case it is left and let the 
+                            other item to adjust themselves to the remaining space*/
+            /* height: 200px;
+            width: 200px; */
+            /* overflow: content-box; */
+            
+        }
+        .card:nth-child(3){
+            clear: left; /* clear property is counter of float as it says that he do not want any float or give reserved
+                            space to someone as stated left or right and can be set to both*/
+                            /* if the clear is set to left or right then the float can reserve the other space but if the
+                                float is set to both then float will not take any space in right or left*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://t.ly/r9KPk" >
+        <div class="card">Card 1</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita impedit nobis sed, quisquam earum perferendis commodi enim animi, asperiores dignissimos libero dolores illum non magnam ipsum nisi facilis fuga vero excepturi saepe ullam? Vel, obcaecati. Nesciunt inventore expedita accusamus minus, ex quasi ipsa sequi. Suscipit cumque fugiat saepe id aperiam ab distinctio facere illo tempora expedita vitae dignissimos ipsa dolorem quasi fuga cum unde, voluptates modi provident sit aut nostrum at? Aut et ad facilis ut dolore blanditiis modi corrupti voluptatum dignissimos perspiciatis quasi, error aliquid at dolor libero velit neque itaque odio, alias aliquam praesentium? Vel dolorum architecto dolorem totam sapiente cum quos culpa reprehenderit accusamus deleniti distinctio molestias expedita consequuntur asperiores aut maxime, laborum voluptates voluptate? Ipsam ipsa sequi sint facilis, quisquam repellat nam voluptatem fuga vero quis doloribus in amet, fugiat deserunt hic quod autem saepe deleniti esse dicta laudantium. Accusantium debitis id, tempore deserunt aspernatur nostrum quod reiciendis ab architecto numquam facere iure esse voluptatibus iste dicta ut consequuntur minus! Nulla sapiente, error cumque vitae eaque sed, maxime repellendus hic dolore minima asperiores dolorem! Voluptate obcaecati tenetur iusto voluptatum ea blanditiis dolore. Repellat at ratione eos ullam nobis tempora aperiam voluptatem. Harum nihil voluptate iure, ipsum iste praesentium architecto aperiam eveniet nemo sed quia sequi dicta aspernatur, facere ea velit. Repellat rem similique magnam unde quia dicta aperiam? Ad labore quis perspiciatis doloremque, reiciendis voluptas deserunt magnam error cumque libero deleniti doloribus aspernatur ut impedit consectetur quam sequi eligendi facere, vitae officiis laudantium blanditiis sunt cupiditate! Minus, ipsa obcaecati, molestias ullam laudantium ex est blanditiis soluta non perferendis consequatur, harum exercitationem tenetur a amet ea ut. At, nihil doloribus molestias sed distinctio odio alias deserunt minima, ad expedita impedit. Sapiente nesciunt enim exercitationem provident atque temporibus vitae eveniet tenetur. Eveniet dicta assumenda cumque, nesciunt blanditiis in iure omnis molestias est voluptas ea aliquam sequi unde soluta excepturi quisquam illum incidunt dignissimos molestiae ut labore aut. Dolor libero quod quaerat, ut vero error sit eligendi nisi veritatis. Sit tempora omnis ipsam mollitia expedita enim neque impedit id quasi ab. Laboriosam assumenda illo mollitia possimus, cumque hic illum inventore autem eius quaerat facilis voluptatibus neque totam ea alias. Cumque, natus laborum ducimus in labore officiis quaerat iusto perspiciatis, repellat dolorem reiciendis pariatur, assumenda aperiam voluptate sapiente nihil corrupti iure temporibus deserunt libero inventore similique atque dolore. Quae temporibus labore asperiores minima dolorem ut at accusantium similique corrupti rerum! Sapiente laudantium saepe quia voluptates? Tenetur dignissimos voluptatum fugiat quis laborum eligendi rem molestiae id minus atque, vel, natus, quos vero error corrupti eveniet quasi labore fuga corporis facere consequuntur? Atque esse obcaecati quisquam inventore similique optio voluptatibus quaerat quis earum ut, vero sunt, rerum amet praesentium, quasi reiciendis eum illum ducimus non alias nulla dolorum nisi temporibus sint? Numquam vero fugiat dolore ducimus temporibus harum asperiores reprehenderit doloremque earum quos exercitationem maxime, perspiciatis totam nemo recusandae voluptatibus quisquam! Labore non saepe in voluptate id, impedit quidem praesentium iste ad? Soluta quod non dignissimos accusamus ratione voluptatibus accusantium error cupiditate vel at repellat ullam possimus culpa necessitatibus animi, commodi debitis, magnam dolores quam laudantium provident maiores. Ratione pariatur nostrum illum repudiandae amet exercitationem nobis, ad vitae officia delectus consectetur iure voluptas inventore soluta quod id dolores eius. Recusandae suscipit necessitatibus sed odit eveniet modi minima minus nulla rem in quas illo voluptatum animi vel, tempora quaerat nesciunt saepe laboriosam possimus unde architecto obcaecati ea.
+        </div>
+        <div class="card">card 3</div>
+    </div>
+    
+</body>
+</html>

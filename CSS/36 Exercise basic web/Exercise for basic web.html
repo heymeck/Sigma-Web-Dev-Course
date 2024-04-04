@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        ul {
+            position: sticky;
+            background-color: #fff;
+            margin: 0px 0px;
+            padding: 10px;
+        }
+        .nav{
+            position: sticky;
+            top: 0px;
+            right: 0px;
+            z-index: 1;
+        }
+
+        ul>li {
+            position: relative;
+            margin: 20px;
+            list-style: none;
+            display: inline;
+        }
+
+        main{
+            margin-top: 10px;
+            background-color: blue;
+            height: 400px;
+            padding: 0px 33px;
+        }
+        .box{
+            display:inline-block;
+            }
+
+        .main_image{
+            box-sizing: border-box;
+            position: relative;
+            height: 300px;
+            width: 400px;
+            margin: 50px 50px;
+            left:75px;
+        }
+        .desc{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 35px;
+        }
+        .desc>h2{
+            padding: 4px;
+        }
+        .logo>img{
+            height: 50px;
+            width: 50px;
+            border:2px solid black;
+            border-radius: 50% 50%;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+         <ul>
+            <li>Home</li>
+            <li>Search</li>
+            <li>Options</li>
+            <li>About</li>
+            <li>Help</li>
+        </ul>
+    </header>
+    
+    <main>
+        <div class="box1 box">
+            <img src="image.png" class="main_image image1">
+        </div>
+        <div class="box2 box">
+            <img src="image.png" class="main_image image2">
+        </div>
+    </main>
+    <div class="desc">
+        <h2>Warning !</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus veritatis nesciunt rerum animi, quam ratione culpa maxime eum provident, doloribus accusantium deserunt necessitatibus hic, sint id dolorem eveniet velit placeat cupiditate adipisci repellat. Tempore a aut nulla in accusantium ipsam fugit tempora voluptatem, repellat debitis obcaecati, laboriosam facere! Mollitia, autem ex aspernatur explicabo nihil nam sint impedit nulla sed blanditiis cum ab minima beatae dolor eius optio natus veniam nemo quo aperiam! Recusandae inventore fugit quam sunt eos blanditiis quaerat molestias, culpa nesciunt, possimus at molestiae aliquid asperiores debitis vitae repellat quos. Pariatur officiis optio, molestias nemo cum repellendus iure et nam, consectetur quae nulla facilis velit in culpa asperiores repudiandae, ab beatae laudantium dolores porro recusandae voluptates cupiditate? Fugiat aut debitis, corrupti porro cum, minus dicta earum harum eum consequatur esse. Exercitationem rerum accusantium dolores commodi esse asperiores cumque, quasi dolorem ad quas ipsum, nihil repellendus a similique numquam?</p>
+    </div>
+    <div class="logo">
+        <img src="image.png" alt="logo" >
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>

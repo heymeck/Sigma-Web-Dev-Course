@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css multi color website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:var(--theme-body);
+            color:var(--color);
+            
+        }
+        :root{
+            --color:rgb(211, 214, 223);
+            --bgc:rgb(55, 120, 177);
+            --margin:10px;
+            --padding:10px;
+            --border:white;
+            --hover:rgb(4, 4, 4);
+            --theme-body:rgb(5, 5, 4);
+            --theme-nav:rgb(164, 177, 88);
+        }
+        .nav-box{
+            /* margin: var(--margin); */
+            /* padding: var(--padding); */
+            background-color: var(--theme-nav);
+            /* border-radius: 20px; */
+            /* border: 2px solid yellowgreen; */
+            border:2px solid rgb(135, 135, 196);
+            
+
+        }
+        .nav-box>li{
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+            /* margin: 14px 40px; */
+            border: 1px solid var(--border);
+            background-color: var(--bgc);
+            color: white;
+            font-size: 18px;
+            color: var(--color);
+            
+            border-radius: 25% 10%;
+            
+        }
+        li:hover{
+            background-color:var(--hover);
+            border:2px solid var(--bgc);
+            padding: 25px;
+            font-size: 20px;
+            transition: 0.5s ease-in;
+        }
+        .main-content{
+            margin: var(--margin);
+            padding: var(--padding);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-box">
+            <li>Home</li>
+            <li>Search</li>
+            <li>Contact</li>
+            <li>Help</li>
+            <li>Profile</li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <h1>Article</h1>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum rem odio ex eius quaerat libero aliquid eum consequuntur, ratione nam incidunt ad similique dolores ea suscipit tenetur placeat consequatur architecto nemo necessitatibus. Nam molestiae amet eligendi ut, commodi corrupti ipsa iure dolore, cumque labore, non nesciunt. Obcaecati quos exercitationem consectetur minima neque, aliquid quibusdam esse odio!</P>
+    </main>
+    
+    
+</body>
+</html>
