@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        /*In this we will create a grid template by name in grid 1 we created it by giving size of item 
+            this can be more efficient way*/
+        .container{
+            border: 2px solid black;
+            display: grid;
+            /* the below command means that the template has 4 coloumns and 3 rows 
+                The first row is full of nav 
+                the second row consist of 2nd row and 1st coloumn main 2nd row 2nd and 3rd coloumn article 
+                    last coloumn sidebar
+                the last row contains of all footers now giving the area to the items of html*/
+           grid-template-areas: "nav nav nav nav"
+                                "main article article sidebar"
+                                "footer footer footer footer";
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            
+        }
+        .item-1{
+            grid-area:nav;
+            background-color: black;
+        }
+        .item-2{
+            grid-area: main;
+            background-color: violet;
+        }
+        .item-3{
+            grid-area:article;
+            background-color: pink;
+        }
+        .item-4{
+            grid-area: sidebar;
+            background-color: lightcyan;
+        }
+        .item-5{
+            grid-area: footer;
+            background-color: lightcoral;
+        }
+        /* .item-6{
+            grid-row: 4/3;
+            grid-column: 1/2;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <!-- <div class="item item-6">6</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin:30px auto;
+            /* border:2px solid black; */
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            max-width: 1000px;
+            flex-wrap: wrap;
+            
+        }
+        .blue{
+            background-color: skyblue;
+        }
+        .box{
+            width: calc(20%);
+            line-height: 130px;
+            /* border:2px solid red; */
+            margin: 20px;
+            cursor: pointer;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(126, 120, 120);
+        }
+        .scalex{
+            transform: scale(1);
+            transition: transform .5s ease;
+        }
+        .scalex:hover{
+            transform: scalex(2) ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class=" blue scalex">Scale X</div>
+        </div>
+        <div class="box">
+            <div class=" blue scaley">Scale Y</div>
+        </div>
+        <div class="box">
+            <div class=" blue scale">Scale </div>
+        </div>
+        <div class="box">
+            <div class=" blue translatex">Translate X</div>
+        </div>
+        <div class="box">
+            <div class=" blue translatey">Translate Y</div>
+        </div>
+        <div class="box">
+            <div class=" blue translate">Translate</div>
+        </div>
+        <div class="box">
+            <div class=" blue matrix">Matrix</div>
+        </div>
+        <div class="box">
+            <div class=" blue rotate">Rotate</div>
+        </div>
+        <div class="box">
+            <div class=" blue Skew">Skew</div>
+        </div>
+        <div class="box">
+            <div class=" blue Skewx">Skew X</div>
+        </div>
+        <div class="box">
+            <div class=" blue Skewy">Skew Y</div>
+        </div>
+        <div class="box">
+            <div class=" blue ">Scale X</div>
+        </div>
+        <div class="box">
+            <div class=" blue ">Scale X</div>
+        </div>
+        <div class="box">
+            <div class=" blue ">Scale X</div>
+        </div>
+        <div class="box">
+            <div class=" blue ">/div>
+        </div>
+        <div class="box">
+            <div class=" blue "></div>
+        </div>
+    </div>
+    
+</body>
+</html>

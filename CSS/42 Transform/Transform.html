@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 100%;
+            border: 2px solid black;
+        }
+        .box{
+            margin: auto ;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            text-align: center;
+            /* transform: rotate(45deg); */
+            /* transform: rotate(.5turn); */
+            /* transform: rotatex(45deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: rotatez(45deg); */
+            /* transform: scale(1); */
+            transition: transform ease .5s;
+            /* transform: skew(20deg); */
+            transform: skewY(0deg);
+            /* transform: translate(50%); */
+            /* transform: translate(40px) skew(30deg) scale(.5); */
+            /* transform-origin: -0% 0%; */
+        }
+        /* .scale:hover{
+            transform: scaleX(2);
+        } */
+        .skew:hover{
+            transform: skewY(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box scale skew">
+            Hello I am a box.
+        </div>
+    </div></body>
+</html>
