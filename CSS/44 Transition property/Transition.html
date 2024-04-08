@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transtion</title>
+    <style>
+        /* There are four property of transition in css */
+        .container{
+            height: 50vh;
+            width: 50vw;
+            background-color: skyblue;
+
+        }
+        .box{
+            height: 10vh;
+            margin: auto;
+            width: 10vw;
+            background-color: blue;
+            /* transition-property: transform ,background-color;
+            transition-duration: 2s;
+            transition-delay: .5s;
+            transition-timing-function: ease; */
+            /* shothand */
+            transition:all 2s cubic-bezier(0, 1.14, 0.55, 1.1) .5s;
+           
+        }
+        .translate{
+            transform: translateX(10%) translatey(50%) scale(1.5);
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">Hello world</div>
+    </div>
+</body>
+</html>
