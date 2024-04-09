@@ -1,0 +1,39 @@
+.container{
+    display: block;
+    position: relative;
+    height: 488px;
+    width: 466px;
+    
+    border: 2px solid black;
+    /* background-color:azure; */
+    background-image: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position:center center;
+    background-repeat: no-repeat; /* this property prevents the image to repeat itself if the image is smaller than the box*/
+    background-clip: padding-box ; /*justify the clipping of image to cover the border area, padding area and content area*/
+}
+.logo{
+    width: calc(100%);
+    height: calc(100%);
+    /*object-fit: cover;  this property is used to cover the height and width of the box accordint to the dimension of the 
+                          the image given
+    /*object-position: top right; is used to cut the desired part of the image by giving the argument of the position you want
+                                  to see like in this case want to see top right position and trim the left position*/
+    /* object-fit: fill;    this is the by default property of object fit*/
+
+    /* object-fit:scale-down; */
+    object-fit: contain;
+    object-position: 10px 20px; 
+}
+/* .text{
+    display: block;
+    position: relative;
+    top: -93px;
+    left:10px;
+    line-height: 10px;
+}
+.para{
+    text-wrap: wrap;
+    text-overflow:ellipsis;
+    line-height: 12px;
+    
+} */
