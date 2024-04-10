@@ -32,20 +32,22 @@ let other_word ={
     2:"Limited",
     3:"Hub"
 }
-var first,second,third;
-for (const key in Adjectives) {
+
     a=Math.random()*3;
+    var first ,second, third;
+for (const key in Adjectives) {
     console.log(a);
     if (a<=1) {
-        first=Adjectives[1];
+        first=Adjectives["1"];
     }else if(a>1 && a<=2){
-        first=Adjectives[2];
+        first=Adjectives["2"];
     }else if(a>2 && a<=3){
-        first=Adjectives[3];
+        first=Adjectives["3"];
     }
 }
-for (const key in shop_name){
     a=Math.random()*3;
+for (const key in shop_name){
+    console.log(a);
     if (a<=1) {
         second=shop_name[1];
     }else if(a>1 && a<=2){
@@ -54,8 +56,9 @@ for (const key in shop_name){
         second=shop_name[3];
     }
 }
-for (const key in other_word) {
     a=Math.random()*3;
+for (const key in other_word) {
+    console.log(a);
     if (a<=1) {
         third=other_word[1];
     }else if(a>1 && a<=2){
@@ -64,4 +67,5 @@ for (const key in other_word) {
         third=other_word[3];
     }
 }
-console.log("Your shop name will be: ",first +second +third);
+console.log("Your shop name will be:"+first+" " +second+" " +third+"");
+console.log(`Your buisness name will be in template ${first} ${second} ${third}`)
