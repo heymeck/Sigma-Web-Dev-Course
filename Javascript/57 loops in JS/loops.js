@@ -14,6 +14,7 @@ let obj={
     role:"programmer",
     company:"Google Yahoo"
 }
+console.log("Use of for in loop");
 for (const key in obj) {
         const element = obj[key];
         console.log(key,element);
