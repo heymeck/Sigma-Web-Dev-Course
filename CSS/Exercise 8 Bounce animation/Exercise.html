@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce animation</title>
+    <style>
+        .container{
+            height: 250px;
+            display: flex;
+            position: relative;
+            /* top: 100px; */
+            width: 960px;
+            background-color: gray;
+            margin: auto;
+            align-items: end;
+        }
+        .box{
+            position: absolute;
+            background-color: red;
+            height: calc(10%);
+            width: calc(2%);
+            border-radius: 50% 50%;
+            transform: translatex(0px);
+            /* animation-name:bouncex, ;
+            animation-duration: 10s;
+            animation-delay: .5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+            animation: bounce 10s linear infinite}
+            
+            
+     
+
+        @keyframes bounce {
+            0%{
+                transform: translateY(0px) translateX(0px);
+            }
+            10%{
+                transform: translateY(-200px) translateX(94px);
+            }
+            20%{
+                transform: translateY(0px) translateX(188px);                
+            }
+            30%{
+                transform: translateY(-160px) translateX(282px);
+            }
+            40%{
+                transform: translateY(0px) translateX(376px);
+            }
+            50%{
+                transform: translateY(-120px) translateX(470px);
+            }
+            60%{
+                transform: translateY(0px) translateX(564px);
+            }
+            70%{
+                transform: translateY(-80px) translateX(658px);
+            }
+            80%{
+                transform: translateY(0px) translateX(752px);
+            }
+            90%{
+                transform: translateY(-40px) translateX(846px);
+            }
+            100%{
+                transform: translateY(0px) translateX(940.08px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
