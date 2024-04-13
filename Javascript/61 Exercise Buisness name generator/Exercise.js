@@ -35,8 +35,8 @@ let other_word ={
 
     a=Math.random()*3;
     var first ,second, third;
-for (const key in Adjectives) {
     console.log(a);
+for (const key in Adjectives) {
     if (a<=1) {
         first=Adjectives["1"];
     }else if(a>1 && a<=2){
@@ -46,8 +46,8 @@ for (const key in Adjectives) {
     }
 }
     a=Math.random()*3;
-for (const key in shop_name){
     console.log(a);
+for (const key in shop_name){
     if (a<=1) {
         second=shop_name[1];
     }else if(a>1 && a<=2){
@@ -57,8 +57,8 @@ for (const key in shop_name){
     }
 }
     a=Math.random()*3;
-for (const key in other_word) {
     console.log(a);
+for (const key in other_word) {
     if (a<=1) {
         third=other_word[1];
     }else if(a>1 && a<=2){
