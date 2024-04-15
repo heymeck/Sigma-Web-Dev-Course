@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 0px 40px;
+        }
+        img{
+            height: 200px;
+            width: 300px;
+            object-fit: fill;
+            object-position: bottom right;
+            
+        }
+        .image{
+            aspect-ratio: 3/2;
+            border:2px solid yellow;
+        }
+        .ima1{
+            filter: blur(1px);   /* to blur the image*/
+
+        }
+        .ima2{
+            filter: contrast(200%) /* to increase the contrast of the image  */
+
+        }
+        .ima3{
+            filter: opacity(50%);
+        }
+    </style>
+</head>
+<body>
+<div class=" container">
+        <div class="ima1 image">
+            <img src="girl.jpg" alt="">
+        </div>
+        <div class="ima2 image">
+            <img src="Butterfly.jpg" alt="image">
+        </div>
+        <div class="ima3 image">
+            <img src="Hibiscus.jpg" alt="image">
+        </div>
+    </div>
+</body>
+</html>
