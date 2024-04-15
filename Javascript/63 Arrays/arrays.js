@@ -30,7 +30,7 @@ console.log("It will return the pop element of array",b.pop());
 console.log("It will return the new length of array and will push the new no or string",b.push(300));
 console.log("after popping and pushing in the array is ",b);
 console.log("\nusing the shift method it will shift the first element of array of length :",b.shift(4));
-console.log("After shifting array will look like :",b);
+console.log("After shifting array will look like "+b+" and length will be:",b.length);
 //to add in the begining of the array we use unshift method
 console.log("using unshift method:",b.unshift(45));
 console.log("After unshifting array will look like :",b);
