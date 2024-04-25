@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and removing Elements using html</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="display: flex;" data-createdby="Hemant" data-date="25th">Hello boy</div>
+        <div class="box">Hello duniya</div>
+    </div>
+    <script>
+        document.querySelector(".container").innerHTML;
+        // document.querySelector(".box").setAttribute("style","display:inline");    // with this you can set the attribute of the element
+        
+        // To insert an element in the html page throug js 
+        let a= document.createElement("div");
+        a.innerHTML="I am a div appended by <b>Hemant<b>"
+        a.setAttribute("class","created");
+        document.querySelector(".container").append(a); //it will insert element at the end of the container
+        
+        //more function like append are below work as their name
+        /*  prepend()   - used to place the element as the first in the container
+            .before9 - used to add element before the node and node can be a comment, text
+            .after()  - opposite to the node.before
+            .replacewith() - used to replace a node with the element you desired.        
+        */
+       let b=document.querySelector(".container")
+       b.insertAdjacentHTML("afterbegin","<b> I am just some random element used to check afterbegin method of js</b>")
+       b.insertAdjacentText("beforebegin","dekho dekho");// to test the text by using before begin 
+       let art=document.createElement("article")
+       art.innerText("husn") 
+       b.insertAdjacentElement("afterend","art");
+
+
+    </script>
+</body>
+</html>
