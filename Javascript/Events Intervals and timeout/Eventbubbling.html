@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 20px;
+            padding: 20px;
+            background-color: green;
+        }
+        .child-container{
+            margin: 20px;
+            padding: 20px;
+            background-color: red;
+        }
+        .child{
+            margin: 20px;
+            padding: 20px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!-- Event bubling is the process when an event listner get propagates from the child to the parents
+    and his parent as result triggers a series of events listner:
+    Example:-If i live in UP, UP is in India, India is in Asia, Asia is in world
+     -->
+     <div class="container">  <!-- here i will add a click event on it and its child also, and it will also get trigger when 
+                                    events listen on its child-->
+        <div class="child-container">
+            <div class="child">Hello I am child</div>
+        </div>
+     </div>
+    <script>
+
+        // Here when I click on the child it will listen the event and perform the function but at the same time event listener 
+        // will propagate from child to child-container and container
+        // Because child is in child-container and child container is in container
+        // To stop it we use 
+        document.querySelector(".container").addEventListener("click",(e)=>{  
+            e.stopPropagation()
+            alert("parent container is triggered");
+        })
+        document.querySelector(".child-container").addEventListener("click",(e)=>{
+            //here I have not added the stop propagation method as i have done in child if i perform the event on this child-container
+            // the parent container event listener will also listen the same event
+            alert("parent child-container is triggered");
+        })
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            e.stopPropagation(); // here i have added this to stop propagation and the event listener will not ger propagated to parent
+                                 // It is important to pass parameter e to create an event object while handling event bubbling
+            alert("parent child is triggered");
+        })
+
+        // Set interval is used to when we want to perform a function after evervy set interval of time 
+        
+        function getrandomcolor(){
+            let r=Math.floor(Math.random()*255);
+            let g=Math.floor(Math.random()*255);
+            let b=Math.floor(Math.random()*255);
+            return `rgb(${r},${g},${b})`
+        }
+        console.log( getrandomcolor());
+        // writing a function rand so we can trigger the background color of the desired element and give it bgc by get random color function
+        function rand(){
+            document.querySelector(".child").style.backgroundColor=getrandomcolor();
+        } 
+        setInterval(()=>{
+            document.querySelector(".child-container").style.backgroundColor=getrandomcolor();
+        
+        },1000);
+        let c=setInterval(()=>{
+            document.querySelector(".child").style.backgroundColor=getrandomcolor();
+            document.querySelector(".child").style.color=getrandomcolor();
+
+        },2000);
+        // to clear the interval or the timeout we use clearinterval() or cleartimout() method but before it we have to store 
+        // them in a variable or we have to know its id, we can know its id  by storing it in variable and consoling it
+        // Example is above in line 75 we stored a interval in c and we can know its id by consoling or just simply clear it like below
+        
+        clearInterval(c); //  this line will stop the inteval performin on the child we can restart it by commenting this line
+        console.log("to know the interval or time out id we stored the timeout or interval in c whose value is=",c)
+
+        // set time out is used to run the function  only once 
+        setTimeout(() => {
+            document.querySelector(".container").style.backgroundColor=getrandomcolor();
+        }, 4000);
+
+        
+    </script>
+        
+</body>
+</html>
