@@ -60,21 +60,43 @@
 // Async-Await is the new way to wait for the data to be process
 
 // in this we create am async function which fetch data from the source
-async function GETDATA(){
-    return new Promise((resolve,reject)=>{
-                    setTimeout((e) => {
-                        resolve('Async-Await');
-                    }, 3000);
-    })
+// async function GETDATA(){
+//     return new Promise((resolve,reject)=>{
+//                     setTimeout((e) => {
+//                         resolve('Async-Await');
+//                     }, 3000);
+//     })
+// }
+// async function main(){  // we have wrap this whole code because await function can only be used in an Async function so we wrap this 
+//                         // in a main function and then call it at last
+//     console.log('Hii this is the first line of async-await func and will exectue')
+//     console.log('Hii this is the second line of async-await func and will exectue')
+//     console.log('Hii this is the third line of async-await func and will exectue')
+// let FETCH= await GETDATA();  // here we used await it means the further code will wait for the data to be fetched
+// console.log(FETCH); // fetch here is variable which holds te get data function;
+// console.log('Hii')
+// }
+// main();
+// console.log('Jai shree ram')
+
+
+// Fetching API in js
+
+async function api(){
+    // fetch takes to promises one is to fetch the data from the server and second is to parse it to json or text format
+    let x= await fetch('https://jsonplaceholder.typicode.com/todos/1') // fetch is here basically a promise which is later resolved by   then
+    // .then(response => response.json())
+    // .then(json => console.log(json))
+    let data = await x.json();
+    console.log(data);
+    return 455;
 }
-async function main(){  // we have wrap this whole code because await function can only be used in an Async function so we wrap this 
-                        // in a main function and then call it at last
+
+async function main2(){
     console.log('Hii this is the first line of async-await func and will exectue')
     console.log('Hii this is the second line of async-await func and will exectue')
+    let fapi= await api();
     console.log('Hii this is the third line of async-await func and will exectue')
-let FETCH= await GETDATA();  // here we used await it means the further code will wait for the data to be fetched
-console.log(FETCH); // fetch here is variable which holds te get data function;
-console.log('Hii')
 }
-main();
-console.log('Jai shree ram')
+main2();
+// we will go deep in fetch api later
