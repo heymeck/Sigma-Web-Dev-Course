@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch and Error Handling</title>
+    <!-- Mdn refrence for errors in js -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error -->
+</head>
+<body>
+
+    <script>
+        // throwing custom error using throw function 
+
+        let a=prompt("Enter first no.")
+        let b=prompt("Enter second no.")
+        if (isNaN(a) || isNaN(b)) {
+            throw Error("You have not enter a no to evaluate")  // throw helps to throw an error to the user if he has done something
+                                                                // wrong like entering string in place of integer    
+        }
+        sum=parseInt(a)+parseInt(b);
+        console.log('a+b is ',sum);
+
+
+
+        
+        // try and catch is used to handle the errors in js, it would catch the error that can be expected while code execution
+        // try catch is synchronous function it would not handle error with asynchronous func like set timeout and setInterval
+        // For Example
+
+        // console.log('a+b is ',sum*x); // here we have done the multiplication of sum with x and x is not define it will throw a 
+                                      // refrence error 
+        try {
+            console.log('a+b is ',sum*x) // here i have done the same but it will just try if it is possible or if it throws error
+        } 
+        catch (Error) {       // the thrown errow will be caught here as it catches the error
+            console.log('Error aa gya bhai');
+        }
+
+        // we use finall in a function so the code after a return line need to be execut because when u return a function the next line of the code stop executing but finally is always get executed after the function is returned
+
+        main=function(){
+            // let y=1; // here we have declared and defined y if y is define than try will execute if not define catch will catch error
+            try{
+                console.log('a+b*y=',sum*y) // it will try to execute if possible if true it will return true
+                return true;
+            }catch(Error){
+                console.log('Error hai ye to');
+                return false;
+            }
+            finally{
+                console.log('It will executed even after the function return either true or false')
+            }
+        }
+        c=main();
+        console.log(c);
+
+
+    </script>
+</body>
+</html>

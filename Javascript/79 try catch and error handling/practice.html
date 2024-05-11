@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let worker =function(name, service){
+            this.name=name;
+            this.service=service;
+        }
+        const worker1=new worker("sachin","Housekeeping")
+        const worker2= new worker("Arvind","watchman")
+        const worker3=new worker("Hemant","coder")
+        console.log(worker1)
+        console.log(worker2)
+        console.log(worker3)
+
+    </script>
+</body>
+</html>
